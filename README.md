@@ -32,7 +32,12 @@
   - Create the Data class
   - Create the api interface
   - Now create the module class for retrofit object inside di package
-    - Annotate it as Singleton and Producers.
+    - Annotate this class as module.
+    - Create a fun with return type Retrofit and Annotate it as Singleton and Produce
+    - Create a fun with return type of API interface and Annotate it as Singleton and Producers.
   - Create application component class.
-    - Annotate it with module and mention your modules.
-    - create the inject fun.
+    - Annotate it with singleton and component & mention your modules.
+    - Create the inject fun.
+  - Now create the repository class
+
+
