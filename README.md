@@ -40,4 +40,10 @@
     - Create the inject fun.
   - Now create the repository class
 
+## MultiBinding
+  - ViewModels need ViewModel Factory class to work with ViewModelProvider.
+  - To have generalized factory i.e. single factory that can create multiple viewmodel objects can be achieved using Dagger 2 Multibinding feature.
+  - Using this, you can produce a map that can help you create different objects based on the key.
+
+  - @IntoMap defines a map wherein you define the keys using annotations and use that map to produce viewmodels at runtime.
 
