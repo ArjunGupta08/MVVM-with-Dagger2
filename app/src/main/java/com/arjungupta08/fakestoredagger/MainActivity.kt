@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         (application as FakerApplication).applicationComponent.inject(this)
 
-        mainViewModel = ViewModelProvider(this, mainViewModelFactory).get(MainViewModel::class.java)
+        mainViewModel = ViewModelProvider(this, mainViewModelFactory) [MainViewModel::class.java]
 
         mainViewModel.products.observe(this) {
             text.text = it.toString()
